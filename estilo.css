@@ -1,6 +1,10 @@
 body{
     font-family: 'Merriweather Sans', sans-serif;
     background-color: #a000ff;
+    margin-top: 10px;
+    margin-right: 2cm;
+    margin-bottom: 2cm;
+    margin-left: 10px;
 }
 .t1{
     color: #00ffa0;
@@ -17,7 +21,7 @@ body{
 
 .contenedor{
     display: flex;
-    justify-content: left;
+    justify-content: right;
     align-items: center;
     height: 100vh;
 }
@@ -30,17 +34,25 @@ body{
     padding: 15px;
     border-radius: 32px;
     box-shadow: 15px 10px 0 5px #00000033;
+    position: relative;
+    top: 20px; left: -200px;
 }
 
 button{
+    font-family: 'Fraunces', serif;
+    color: white;
     cursor: pointer;
-    margin: 5px;
+    margin: 7px;
     padding: 0;
-    border-radius: 32px;
-    font-size: 1.5em;
+    width: 45.8px;
+    border-radius: 10px;
+    font-size: 1.83em;
     border: none;
-    background-color: #00ffa0;
+    line-height: 35px;
+    background-color: #03ce91;
     box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #00ffc11f;
+    position: relative;
+    top: 115px; left: 0px;
 }
 
 button:active{
