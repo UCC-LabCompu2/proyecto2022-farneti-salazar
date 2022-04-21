@@ -38,13 +38,27 @@ body{
     top: 20px; left: -200px;
 }
 
-button{
+.modo{
+    font-family: 'Fraunces', serif;
+    color: white;
+    cursor: pointer;
+    margin: 0;
+    border-radius: 10px;
+    font-size: 1.4em;
+    border: none;
+    line-height: 20px;
+    btn-block:200px;
+    float: left;
+    border: 0px;
+}
+
+#botonsimple{
     font-family: 'Fraunces', serif;
     color: white;
     cursor: pointer;
     margin: 7px;
     padding: 0;
-    width: 45.8px;
+    width: 45px;
     border-radius: 10px;
     font-size: 1.83em;
     border: none;
