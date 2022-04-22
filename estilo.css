@@ -25,7 +25,6 @@ body{
     align-items: center;
     height: 100vh;
 }
-
 .calculadora{
     display: grid;
     grid-template-columns: repeat(4, 75px);
@@ -37,51 +36,48 @@ body{
     position: relative;
     top: 20px; left: -200px;
 }
-
-.modo{
+.botondoble{
     font-family: 'Fraunces', serif;
     color: white;
     cursor: pointer;
     margin: 0;
+    padding: 5px;
     border-radius: 10px;
     font-size: 1.4em;
-    border: none;
+    border: #03ce91;
     line-height: 20px;
     background-color: #03ce91;
-    btn-block:200px;
     float: left;
-    border: 0px;
-    hover{font-size: 1.4em;
     position: relative;
-    top: 0px; left: 0px;
-    }
+    top: 1.5cm; left: 27.3cm;
+}
+
+a:hover{
+    font-size: 1.5em;
 }
 
 .botonsimple{
     font-family: 'Fraunces', serif;
     color: white;
     cursor: pointer;
-    margin: 7px;
-    padding: 0;
+    margin: 6px;
+    padding: 2.8px;
     width: 45px;
     border-radius: 10px;
     font-size: 1.83em;
     border: none;
-    line-height: 35px;
+    line-height: 30px;
     background-color: #03ce91;
     box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #00ffc11f;
     position: relative;
-    top: 115px; left: 0px;
+    top: 115px; left: -1.5px;
 }
-
 button:active{
     background-color: #006f54;
 }
-
 button:focus{
     outline: none;
 }
-
 .mostrar{
     grid-column: 1 / -1;
     padding: 16px;
