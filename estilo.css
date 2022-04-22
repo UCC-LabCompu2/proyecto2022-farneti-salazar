@@ -19,7 +19,7 @@ body{
     color: #fff;
     font-size: medium;
     text-align: center;
-    line-height: 0cm;
+    line-height: 0;
 }
 
 .t3{
@@ -35,10 +35,6 @@ header{
     margin: 0 auto;
 }
 
-.posicion{
-    position: relative;
-}
-
 ul{
     list-style: none;
 }
@@ -52,8 +48,7 @@ ul{
     min-width: 150px;
     border-radius: 32px;
     position: relative;
-    left: 15.6cm;
-
+    left: 13.5cm;
 }
 
 #menu li>a:hover{
@@ -76,28 +71,87 @@ ul{
     left: -19px;
 }
 
-
-
-
-
-
-.contenedor{
+/*estandar*/
+.contenedorestandar{
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
     height: 100vh;
 }
-.calculadora{
+
+.calculadoraestandar{
     display: grid;
     grid-template-columns: repeat(4, 75px);
     grid-template-rows: 160px repeat(5, 75px);
     background-color: #00ffa0;
-    padding: 15px;
+    padding: 20px;
     border-radius: 32px;
     box-shadow: 15px 10px 0 5px #00000033;
-    position: relative;
-    top: 20px; left: -200px;
+    position: center;
 }
+
+.mostrarestandar{
+    grid-area: 1/-1/1/1;
+    padding: 16px;
+    display: flex;
+    margin: 10px 10px 10px;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: #363636;
+    border-radius: 32px;
+    text-align: right;
+    justify-content: space-between;
+    word-break: initial;
+    box-shadow: 0 0 0 10px #00000033;
+}
+.img2{
+    position: relative;
+    top: -5.4cm; left: 118px;
+}
+/*cientifica*/
+.contenedorcientifica{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculadoracientifica{
+    display: grid;
+    grid-template-columns: repeat(5, 70px);
+    grid-template-rows: 160px repeat(8, 65px);
+    background-color: #00ffa0;
+    padding: 25px;
+    border-radius: 32px;
+    box-shadow: 15px 10px 0 5px #00000033;
+    position: center;
+}
+.img1{
+    position: relative;
+    top: -5.45cm; left: 138px;
+}
+
+.centrado {
+    text-align: center;
+}
+
+.mostrarcientifica{
+    grid-area: 1/-1/1/1;
+    padding: 16px;
+    display: flex;
+    margin: 10px 10px 10px;
+    flex-direction: column;
+    align-items: center;
+    background-color: #363636;
+    border-radius: 32px;
+    text-align: center;
+    justify-content: space-between;
+    word-break: initial;
+    box-shadow: 0 0 0 10px #00000033;
+}
+
+
+/*botones*/
 .botondoble{
     font-family: 'Fraunces', serif;
     color: white;
@@ -118,7 +172,7 @@ a:hover{
     font-size: 1.5em;
 }
 
-.botonsimple{
+button.numero{
     font-family: 'Fraunces', serif;
     color: white;
     cursor: pointer;
@@ -132,27 +186,34 @@ a:hover{
     background-color: #03ce91;
     box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #00ffc11f;
     position: relative;
-    top: 115px; left: -1.5px;
+    top: 125px; left: -1.5px;
 }
-button:active{
+
+button.operador{
+    font-family: 'Fraunces', serif;
+    color: white;
+    cursor: pointer;
+    margin: 0px;
+    padding: 2px;
+    width: 57.3px;
+    border-radius: 10px;
+    font-size: 1.65em;
+    border: none;
+    line-height: 30px;
+    background-color: #ffa07a;
+    box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #00ffc11f;
+    position: relative;
+    top: 125px; left: -1.5px;
+}
+button:active.numero{
     background-color: #006f54;
+}
+
+button:active.operador{
+    background-color: #ff4500;
 }
 button:focus{
     outline: none;
-}
-.mostrar{
-    grid-column: 1 / -1;
-    padding: 16px;
-    display: flex;
-    margin: 10px 10px 20px;
-    flex-direction: column;
-    align-items: flex-end;
-    background-color: #363636;
-    border-radius: 32px;
-    text-align: right;
-    justify-content: space-between;
-    word-break: break-all;
-    box-shadow: 0 0 0 10px #00000033;
 }
 
 #v_actual{
