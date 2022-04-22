@@ -18,12 +18,23 @@
 <header>
     <h1 class="t1">CALCULADORA</h1>
     <h3 class="t2">Farneti/Salazar</h3>
+    <h2 class="t3">MODO:</h2>
+    <nav>
+        <div class="posicion"></div>
+        <ul id="menu">
+            <li><a href="">Estandar</a></li>
+            <li><a href="">Científica</a>
+                <ul>
+                    <li><a href="">fx</a></li>
+                    <li><a href="">inv</a></li>
+                </ul>
+            </li>
+            </div>
+    </nav>
+
 </header>
 <nav></nav>
-    <div >
-        <a><button class="botondoble"> 123 </button></a>
-        <a><button class="botondoble"> fx </button></a>
-    </div>
+
 
     <div class="contenedor">
         <div class="calculadora">
@@ -31,6 +42,7 @@
                 <div id="v_anterior"></div>
                 <div id="v_actual"></div>
 
+    <div id="estandar">
     <p>
         <button class="botonsimple" value="borrar">C</button>
         <button class="botonsimple" value="borrartodo">CE</button>
@@ -62,60 +74,64 @@
         <button class="botonsimple" value="igual">=</button>
     </p>
     </div>
+    <div id="cientifica">
+        <p>
+            <button class="botonsimple">RAD</button>
+            <button class="botonsimple">DEG</button>
+            <button class="botonsimple" value="factorial">x!</button>
+            <button class="botonsimple" value="dividir">INV</button>
+        </p>
+        <p>
+            <button class="botonsimple">π</button>
+            <button class="botonsimple" value="seno">sen</button>
+            <button class="botonsimple" value="logaritmo natural">ln</button>
+            <button class="botonsimple" value="exponente">EXP</button>
+        </p>
+        <p>
+            <button class="botonsimple">e</button>
+            <button class="botonsimple" value="coseno">cos</button>
+            <button class="botonsimple" value="logaritmo">log</button>
+            <button class="botonsimple" value="anterior">Ans</button>
+        </p>
+        <p>
+            <button class="botonsimple" value="raiz">√</button>
+            <button class="botonsimple" value="tangente">tg</button>
+            <button class="botonsimple" value="exponente">xⁿ</button>
+            <button class="botonsimple" value="igual">=</button>
+        </p>
+    </div>
+    <div id="inversa">
+        <p>
+            <button class="botonsimple">RAD</button>
+            <button class="botonsimple">DEG</button>
+            <button class="botonsimple" value="factorial">x!</button>
+            <button class="botonsimple" value="dividir">INV</button>
+        </p>
+        <p>
+            <button class="botonsimple">π</button>
+            <button class="botonsimple" value="seno">sen⁻¹</button>
+            <button class="botonsimple" value="logaritmo natural">e^x</button>
+            <button class="botonsimple" value="exponente">EXP</button>
+        </p>
+        <p>
+            <button class="botonsimple">e</button>
+            <button class="botonsimple" value="coseno">cos⁻¹</button>
+            <button class="botonsimple" value="logaritmo">10^x</button>
+            <button class="botonsimple" value="anterior">Rnd</button>
+        </p>
+        <p>
+            <button class="botonsimple" value="raiz">x²</button>
+            <button class="botonsimple" value="tangente">tg⁻¹</button>
+            <button class="botonsimple" value="exponente">n√x</button>
+            <button class="botonsimple" value="igual">=</button>
+        </p>
+    </div>
+
         </div>
             </div>
+                </div>
 
-<!-- con tecla fx
-    <p>
-        <button class="botonsimple">RAD</button>
-        <button class="botonsimple">DEG</button>
-        <button class="botonsimple" value="factorial">x!</button>
-        <button class="botonsimple" value="dividir">INV</button>
-    </p>
-    <p>
-        <button class="botonsimple">π</button>
-        <button class="botonsimple" value="seno">sen</button>
-        <button class="botonsimple" value="logaritmo natural">ln</button>
-        <button class="botonsimple" value="exponente">EXP</button>
-    </p>
-    <p>
-        <button class="botonsimple">e</button>
-        <button class="botonsimple" value="coseno">cos</button>
-        <button class="botonsimple" value="logaritmo">log</button>
-        <button class="botonsimple" value="anterior">Ans</button>
-    </p>
-    <p>
-        <button class="botonsimple" value="raiz">√</button>
-        <button class="botonsimple" value="tangente">tg</button>
-        <button class="botonsimple" value="exponente">xⁿ</button>
-        <button class="botonsimple" value="igual">=</button>
-    </p>-->
 
-<!-- con tacla inv
-    <p>
-        <button class="botonsimple">RAD</button>
-        <button class="botonsimple">DEG</button>
-        <button class="botonsimple" value="factorial">x!</button>
-        <button class="botonsimple" value="dividir">INV</button>
-    </p>
-    <p>
-        <button class="botonsimple">π</button>
-        <button class="botonsimple" value="seno">sen⁻¹</button>
-        <button class="botonsimple" value="logaritmo natural">e^x</button>
-        <button class="botonsimple" value="exponente">EXP</button>
-    </p>
-    <p>
-        <button class="botonsimple">e</button>
-        <button class="botonsimple" value="coseno">cos⁻¹</button>
-        <button class="botonsimple" value="logaritmo">10^x</button>
-        <button class="botonsimple" value="anterior">Rnd</button>
-    </p>
-    <p>
-        <button class="botonsimple" value="raiz">x²</button>
-        <button class="botonsimple" value="tangente">tg⁻¹</button>
-        <button class="botonsimple" value="exponente">n√x</button>
-        <button class="botonsimple" value="igual">=</button>
-    </p>-->
 
 </body>
 </html>
