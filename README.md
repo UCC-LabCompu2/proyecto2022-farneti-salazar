@@ -1,5 +1,7 @@
-# proyecto2022
+# calculadora 
 Estructura de Proyecto Lab de Compu II - 2022
+## Farneti Melanie, Salazar Fernanda
+### tecnologias usadas: html 5, css 3
 
 ## Requisitos del Primer Parcial
 

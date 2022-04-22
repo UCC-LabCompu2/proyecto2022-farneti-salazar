@@ -47,14 +47,17 @@ body{
     font-size: 1.4em;
     border: none;
     line-height: 20px;
+    background-color: #03ce91;
     btn-block:200px;
     float: left;
     border: 0px;
     hover{font-size: 1.4em;
+    position: relative;
+    top: 0px; left: 0px;
     }
 }
 
-#botonsimple{
+.botonsimple{
     font-family: 'Fraunces', serif;
     color: white;
     cursor: pointer;
