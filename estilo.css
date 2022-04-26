@@ -46,7 +46,12 @@ ul{
     list-style: none;
 }
 
-#menu li>a{
+.menu{
+    display: flex;
+    justify-content: center;
+}
+
+.menu li>a{
     background-color: #00ffa0;
     color: white;
     padding: 10px;
@@ -54,25 +59,30 @@ ul{
     text-decoration: none;
     min-width: 150px;
     border-radius: 32px;
-    position: relative;
-    left: 13.5cm;
+    text-align:center;
 }
 
-#menu li>a:hover{
+.menu li>a:hover{
     color: white;
     background-color: #00ffa0;
 }
 
-#menu>li{
+.menu>li{
     float: left;
     text-align:center;
 }
 
-#menu>li>ul{
+.menu>li>ul{
     display: none;
 }
 
-#menu>li:hover>ul {
+.menu>li:hover>ul {
+    display:block;
+    position: relative;
+    left: -19px;
+}
+
+.menu>li:hover>ul>li>ul{
     display:block;
     position: relative;
     left: -19px;
@@ -87,7 +97,6 @@ ul{
     text-decoration: none;
     min-width: 150px;
     border-radius: 32px;
-    position: left;
 }
 
 #menuestandar li>a:hover{
@@ -155,7 +164,6 @@ ul{
     text-decoration: none;
     min-width: 150px;
     border-radius: 32px;
-    position: left;
 }
 
 #menucientifica li>a:hover{
@@ -183,6 +191,7 @@ ul{
     justify-content: center;
     align-items: center;
     height: 100vh;
+
 }
 
 .calculadoracientifica{
@@ -193,7 +202,6 @@ ul{
     padding: 25px;
     border-radius: 32px;
     box-shadow: 15px 10px 0 5px #00000033;
-    position: center;
 }
 .img1{
     position: relative;
@@ -246,38 +254,7 @@ ul{
     text-align: center;
 }
 
-.mostrarcompleta{
-    grid-area: 1/-1/1/1;
-    padding: 16px;
-    display: flex;
-    margin: 10px 10px 10px;
-    flex-direction: column;
-    align-items: center;
-    background-color: #363636;
-    border-radius: 32px;
-    text-align: center;
-    justify-content: space-between;
-    word-break: initial;
-    box-shadow: 0 0 0 10px #00000033;
-}
-
 /*botones*/
-.botondoble{
-    font-family: 'Fraunces', serif;
-    color: white;
-    cursor: pointer;
-    margin: 0;
-    padding: 5px;
-    border-radius: 10px;
-    font-size: 1.4em;
-    border: #03ce91;
-    line-height: 20px;
-    background-color: #03ce91;
-    float: left;
-    position: relative;
-    top: 1.5cm; left: 27.3cm;
-}
-
 a:hover{
     font-size: 1.5em;
 }
@@ -303,7 +280,7 @@ button.operador{
     font-family: 'Fraunces', serif;
     color: white;
     cursor: pointer;
-    margin: 0px;
+    margin: 0;
     padding: 2px;
     width: 57.3px;
     border-radius: 10px;
