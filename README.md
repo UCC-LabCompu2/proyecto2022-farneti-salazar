@@ -15,7 +15,7 @@ Estructura de Proyecto Lab de Compu II - 2022
 
 ### Sobre el Proyecto General
 - [x] La página principal debe llamarse index
-- [ ] Identar correctamente el código (en Webstorm Ctrl+Alt+L)
+- [x] Identar correctamente el código (en Webstorm Ctrl+Alt+L)
 - [ ] No debe haber errores presentes (realizar *Code* > *Inspect Code* para verificar que no haya errores)
 - [x] Se debe emplear algún favicon
 - [x] Emplear alguna fuente de google fonts o subir al proyecto alguna fuente externa
