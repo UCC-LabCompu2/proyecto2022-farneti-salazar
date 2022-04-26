@@ -1,10 +1,7 @@
 body{
     font-family: 'Merriweather Sans', sans-serif;
     background-color: #a000ff;
-    margin-top: 10px;
-    margin-right: 2cm;
-    margin-bottom: 2cm;
-    margin-left: 10px;
+    margin: 1cm;
 }
 
 /*titulos*/
@@ -104,8 +101,6 @@ ul{
 
 #menuestandar>li:hover>ul {
     display:block;
-    position: relative;
-    left: -19px;
 }
 
 .contenedorestandar{
@@ -171,8 +166,6 @@ ul{
 
 #menucientifica>li:hover>ul {
     display:block;
-    position: relative;
-    left: -19px;
 }
 
 .contenedorcientifica{
@@ -253,7 +246,7 @@ button.numero{
     color: white;
     cursor: pointer;
     margin: 6px;
-    padding: 2.8px;
+    padding: 0.01cm;
     width: 45px;
     border-radius: 10px;
     font-size: 1.83em;
@@ -288,7 +281,7 @@ button.operador{
     cursor: pointer;
     margin: 0;
     padding: 2px;
-    width: 57.3px;
+    width: 1.5cm;
     border-radius: 10px;
     font-size: 1.65em;
     border: none;
