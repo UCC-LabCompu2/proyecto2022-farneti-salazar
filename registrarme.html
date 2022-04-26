@@ -12,10 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fraunces&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="imagenes/favicon.png" type="image/x-icon">
-    <link rel="shortcut icon" href="imagenes/favicon.png" type="image/x-icon">
+
 </head>
-<body >
+<body>
 <header>
     <nav>
         <div>
@@ -24,11 +23,11 @@
                 <li><a><img src="imagenes/about.png" width="35" height="35" alt="contacto"></a>
                     <ul>
                         <li><a>Email</a>
-                        <ul>
-                            <li><a href="mailto:2113289@ucc.edu.ar?">Melanie Farneti</a></li>
-                            <li><a href="">Fernanda Salazar</a></li>
-                            </li>
-                        </ul>
+                            <ul>
+                                <li><a href="mailto:2113289@ucc.edu.ar?">Melanie Farneti</a></li>
+                                <li><a href="">Fernanda Salazar</a></li>
+                                </li>
+                            </ul>
                     </ul>
                 </li>
                 <li><a><img src="imagenes/login.png" width="35" height="35" alt="registrarse"></a>
@@ -38,21 +37,29 @@
                 </li>
             </ul>
         </div>
-        <h1 class="t1">CALCULADORA</h1>
-        <h2 class="t3">MODO:</h2>
-        <div>
-        <ul class="menu">
-            <li><a href="http://localhost:63342/proyecto2022-farneti-salazar/estandar.html?_ijt=dinuuak06be3f6hvfl08k7a0kl&_ij_reload=RELOAD_ON_SAVE">Estandar</a></li>
-            <li><a>Científica</a>
-                <ul>
-                    <li><a href="http://localhost:63342/proyecto2022-farneti-salazar/cientifica.html?_ijt=dinuuak06be3f6hvfl08k7a0kl&_ij_reload=RELOAD_ON_SAVE">fx</a></li>
-                    <li><a href="http://localhost:63342/proyecto2022-farneti-salazar/inversa.html?_ijt=dinuuak06be3f6hvfl08k7a0kl&_ij_reload=RELOAD_ON_SAVE">inv</a></li>
-                </ul>
-            </li>
-            <li><a href="http://localhost:63342/proyecto2022-farneti-salazar/completa.html?_ijt=spnfo6kkn2ilij35d7qo9k9gdg&_ij_reload=RELOAD_ON_SAVE">Completa</a></li>
-        </ul>
-            </div>
+        <h1 class="t3">REGISTRAR UNA CUENTA</h1>
+        <form>
+            <ul>
+                <li>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="user_name">
+                </li>
+                <li>
+                    <label for="mail">Correo electrónico:</label>
+                    <input type="email" id="mail" name="user_mail">
+                </li>
+                <li>
+                    <label for="password">Contraseña:</label>
+                    <input type="" id="password" name="user_mail">
+                </li>
+                <li>
+                    <label for="repassword">Confirmar contraseña:</label>
+                    <input type="" id="repassword" name="user_mail">
+                </li>
+            </ul>
+        </form>
     </nav>
 </header>
+<button class="enviar">Envíar!</button>
 </body>
 </html>

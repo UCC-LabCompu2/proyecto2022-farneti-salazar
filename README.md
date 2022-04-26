@@ -17,7 +17,7 @@ Estructura de Proyecto Lab de Compu II - 2022
 - [x] La página principal debe llamarse index
 - [ ] Identar correctamente el código (en Webstorm Ctrl+Alt+L)
 - [ ] No debe haber errores presentes (realizar *Code* > *Inspect Code* para verificar que no haya errores)
-- [ ] Se debe emplear algún favicon
+- [x] Se debe emplear algún favicon
 - [x] Emplear alguna fuente de google fonts o subir al proyecto alguna fuente externa
 - [ ] Debe haber navegación entre todas las páginas
 
@@ -31,7 +31,7 @@ Estructura de Proyecto Lab de Compu II - 2022
 - [x] Debe haber por lo menos una etiqueta ```<img>``` en la página.
 - [x] La estructura de la página debe estar definida con ```<div></div>```
 - [x] Debe contener al menos 3 elementos de tipo ```<input>``` o ```<select>``` ó ```<button>``` que le permitan al usuario ingresar valores para poder realizar un cálculo de un ejercicio.
-- [ ] Debe contener un ```<canvas>```, para que posteriormente (en la 2da etapa) se grafique alguna imagen representativa del ejercicio. (el desarrollo del gráfico se realizará cuando se vea la unidad de “Orientación a Eventos”)
+- [x] Debe contener un ```<canvas>```, para que posteriormente (en la 2da etapa) se grafique alguna imagen representativa del ejercicio. (el desarrollo del gráfico se realizará cuando se vea la unidad de “Orientación a Eventos”)
 - [x] No espaciar con excesivos ```<br>```. Utilizar márgenes, paddings, etc.
 - [x] No utilizar etiquetas deprecadas.
 - [x] Todas las etiquetas deben estar correctamente cerradas
@@ -39,14 +39,14 @@ Estructura de Proyecto Lab de Compu II - 2022
 
 ### Sobre el CSS
 - [x] El estilo de los elementos debe establecerse en un archivo CSS (prohibido poner el atributo style a los elementos o emplear estilos incrustados).
-- [ ] El CSS debe contar mínimo con un tipo de cada forma (por Tag, por ID y por clase).
+- [x] El CSS debe contar mínimo con un tipo de cada forma (por Tag, por ID y por clase).
 - [x] Se debe emplear pseudoclase
 - [x] No emplear !important
 
 ### Sobre Accesibilidad:
-- [ ] Toda imagen debe tener su etiqueta alt
-- [ ] Todo ```<input>``` o ```<select>``` debe tener su ```<label>```
-- [ ] Los labels deben contener el atributo **for** (el for debe contener el id del input al cual se referencia) 
+- [x] Toda imagen debe tener su etiqueta alt
+- [x] Todo ```<input>``` o ```<select>``` debe tener su ```<label>```
+- [x] Los labels deben contener el atributo **for** (el for debe contener el id del input al cual se referencia) 
 - [ ] Si hay una tabla en la página, debe contener ```<caption></caption>```
 
 ### Sobre las correcciones

@@ -15,13 +15,6 @@ body{
     line-height: 5cm;
 }
 
-.t2{
-    color: #fff;
-    font-size: medium;
-    text-align: center;
-    line-height: 0;
-}
-
 .t3{
     color: #00ffa0;
     font-size: 1.5cm;
@@ -77,15 +70,11 @@ ul{
 }
 
 .menu>li:hover>ul {
-    display:block;
-    position: relative;
-    left: -19px;
+    display: block;
 }
 
 .menu>li:hover>ul>li>ul{
-    display:block;
-    position: relative;
-    left: -19px;
+    display: flex;
 }
 
 /*estandar*/
@@ -276,6 +265,23 @@ button.numero{
     top: 125px; left: -1.5px;
 }
 
+button.enviar{
+    font-family: 'Fraunces', serif;
+    color: white;
+    cursor: pointer;
+    margin: 6px;
+    padding: 8px 10px;
+    border-radius: 10px;
+    font-size: 1.83em;
+    border: none;
+    line-height: 30px;
+    background-color: #03ce91;
+    box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #00ffc11f;
+    position: relative;
+    left:50%;
+}
+
+
 button.operador{
     font-family: 'Fraunces', serif;
     color: white;
@@ -292,6 +298,12 @@ button.operador{
     position: relative;
     top: 125px; left: -1.5px;
 }
+
+button:active.enviar{
+    font-size: 2em;
+    background-color: #006f54;
+}
+
 button:active.numero{
     background-color: #006f54;
 }
@@ -299,6 +311,7 @@ button:active.numero{
 button:active.operador{
     background-color: #ff4500;
 }
+
 button:focus{
     outline: none;
 }
@@ -310,4 +323,34 @@ button:focus{
 #v_anterior{
     font-size: 2em;
 }
+
+/*formulario*/
+form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    background-color: #00ffa0;
+    border-radius: 1em;
+}
+
+ul {
+    list-style: none;
+    padding: 2px;
+    margin: 2px;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: white;
+
+}
+
+form li + li {
+    margin-top: 0.5cm;
+}
+
+label {
+    display: inline-block;
+    width: 145px;
+    text-align: right;
+}
+
 
