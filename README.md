@@ -48,7 +48,7 @@ Estructura de Proyecto Lab de Compu II - 2022
 - [x] Toda imagen debe tener su etiqueta alt
 - [x] Todo ```<input>``` o ```<select>``` debe tener su ```<label>```
 - [x] Los labels deben contener el atributo **for** (el for debe contener el id del input al cual se referencia) 
-- [ ] Si hay una tabla en la página, debe contener ```<caption></caption>```
+- [x] Si hay una tabla en la página, debe contener ```<caption></caption>``` (no hay tabla) 
 
 ### Sobre las correcciones
 * Se corregirá el proyecto con el último commit realizado en Github hasta las 23:59 del día anterior a la fecha de entrega

@@ -1,15 +1,21 @@
-body{
+body{ /*cuenta como tag (?*/
     font-family: 'Merriweather Sans', sans-serif;
     background-color: #a000ff;
     margin: 1cm;
 }
 
+footer{ /*pie de pagina*/
+    color: white;
+    text-align: center;
+    margin: 2cm;
+}
+
 /*titulos*/
 .t1{
     color: #00ffa0;
-    font-size: 2.5cm;
-    text-align: center;
-    line-height: 5cm;
+    font-size: 2.5cm; /*tamaño de fuente*/
+    text-align: center; /*alineacion de texto*/
+    line-height: 5cm; /*distancia entre líneas de texto*/
 }
 
 .t3{
@@ -29,49 +35,34 @@ body{
 /*barra de menu*/
 header{
     font-family: 'Merriweather Sans', sans-serif;
-    margin: 0 auto;
-}
-
-ul{
-    list-style: none;
 }
 
 .menu{
-    display: flex;
-    justify-content: center;
+    display: flex; /*elemento flexible que puede alinarse*/
+    justify-content: center; /*ubicacion al centro del eje x*/
 }
 
 .menu li>a{
     background-color: #00ffa0;
     color: white;
-    padding: 10px;
-    display: block;
-    text-decoration: none;
-    min-width: 150px;
-    border-radius: 32px;
-    text-align:center;
-}
-
-.menu li>a:hover{
-    color: white;
-    background-color: #00ffa0;
-}
-
-.menu>li{
-    float: left;
+    padding: 10px; /*borde interno*/
+    display: block; /*comportamiento de bloque*/
+    text-decoration: none; /*saca subrayado*/
+    min-width: 150px; /*ancho minimo*/
+    border-radius: 32px; /*redondeo de borde*/
     text-align:center;
 }
 
 .menu>li>ul{
-    display: none;
+    display: none; /*ocultar y mostrar elementos*/
 }
 
 .menu>li:hover>ul {
-    display: block;
+    display: block; /*me deja mostrar elementos dentro del menu principal*/
 }
 
 .menu>li:hover>ul>li>ul{
-    display: flex;
+    display: flex; /*flexible, me deja tener la pestaña de email mas grande*/
 }
 
 /*estandar*/
@@ -85,14 +76,9 @@ ul{
     border-radius: 32px;
 }
 
-#menuestandar li>a:hover{
-    color: white;
-    background-color: #00ffa0;
-}
-
 #menuestandar>li{
-    float: left;
-    text-align:center;
+    float: left; /*flotante que alinea elemento a la izquierda*/
+    text-align:center; /*alinea el texto*/
 }
 
 #menuestandar>li>ul{
@@ -103,16 +89,16 @@ ul{
     display:block;
 }
 
-.contenedorestandar{
+.contenedorestandar{ /*borde exterior verde de la calculadora*/
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.calculadoraestandar{
+.calculadoraestandar{ /*contenedor verde*/
     display: grid;
-    grid-template-columns: repeat(4, 75px);
+    grid-template-columns: repeat(4, 75px); /*define linea y tamaño de columnas*/
     grid-template-rows: 160px repeat(5, 75px);
     background-color: #00ffa0;
     padding: 20px;
@@ -121,24 +107,24 @@ ul{
     position: center;
 }
 
-.mostrarestandar{
-    grid-area: 1/-1/1/1;
+.mostrarestandar{ /*cuadro negro*/
+    grid-area: 1/-1/1/1; /*tamaño y la ubicación de lo negro*/
     padding: 16px;
     display: flex;
     margin: 10px 10px 10px;
-    flex-direction: column;
-    align-items: flex-end;
+    flex-direction: column; /*alineacion de los elementos*/
+    align-items: flex-end; /*alineación de elementos en eje transversal y abajo*/
     background-color: #363636;
     border-radius: 32px;
     text-align: right;
-    justify-content: space-between;
-    word-break: initial;
     box-shadow: 0 0 0 10px #00000033;
 }
-.img2{
+
+.img2{ /*ubicacion de casio*/
     position: relative;
     top: -5.4cm; left: 118px;
 }
+
 /*cientifica*/
 #menucientifica li>a{
     background-color: #00ffa0;
@@ -148,11 +134,6 @@ ul{
     text-decoration: none;
     min-width: 150px;
     border-radius: 32px;
-}
-
-#menucientifica li>a:hover{
-    color: white;
-    background-color: #00ffa0;
 }
 
 #menucientifica>li{
@@ -173,7 +154,6 @@ ul{
     justify-content: center;
     align-items: center;
     height: 100vh;
-
 }
 
 .calculadoracientifica{
@@ -185,13 +165,10 @@ ul{
     border-radius: 32px;
     box-shadow: 15px 10px 0 5px #00000033;
 }
-.img1{
+
+.img1{ /*ubicacion del casio*/
     position: relative;
     top: -5.45cm; left: 138px;
-}
-
-.centrado {
-    text-align: center;
 }
 
 .mostrarcientifica{
@@ -204,8 +181,6 @@ ul{
     background-color: #363636;
     border-radius: 32px;
     text-align: center;
-    justify-content: space-between;
-    word-break: initial;
     box-shadow: 0 0 0 10px #00000033;
 }
 
@@ -227,24 +202,21 @@ ul{
     box-shadow: 15px 10px 0 5px #00000033;
     position: center;
 }
+
 .img3{
     position: relative;
     top: -5.45cm; left: 225px;
 }
 
-.centrado {
-    text-align: center;
-}
-
 /*botones*/
-a:hover{
+a:hover{ /*agranda cuando paso el cursor*/
     font-size: 1.5em;
 }
 
 button.numero{
     font-family: 'Fraunces', serif;
     color: white;
-    cursor: pointer;
+    cursor: pointer; /*manito*/
     margin: 6px;
     padding: 0.01cm;
     width: 45px;
@@ -305,20 +277,8 @@ button:active.operador{
     background-color: #ff4500;
 }
 
-button:focus{
-    outline: none;
-}
-
-#v_actual{
-    font-size: 1.5em;
-}
-
-#v_anterior{
-    font-size: 2em;
-}
-
-/*formulario*/
-form {
+/*formulario registrarse*/
+form { /*recuadro verde*/
     margin: 0 auto;
     width: 400px;
     padding: 1em;
@@ -327,21 +287,20 @@ form {
     border-radius: 1em;
 }
 
-ul {
+ul { /*lista*/
     list-style: none;
     padding: 2px;
     margin: 2px;
     font-family: 'Merriweather Sans', sans-serif;
     color: white;
-
 }
 
-form li + li {
+li{ /*espacio entre linea*/
     margin-top: 0.5cm;
 }
 
 label {
-    display: inline-block;
+    display: inline-block; /*funciona como bloque en linea*/
     width: 145px;
     text-align: right;
 }
