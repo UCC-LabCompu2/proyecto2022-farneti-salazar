@@ -2,7 +2,7 @@
 Estructura de Proyecto Lab de Compu II - 2022
 ## Farneti Melanie, Salazar Fernanda
 ### tecnologias usadas: html 5, css 3
-### Link al proyecto: [proyecto-farneti/salazar](https://ucc-labcompu2.github.io/proyecto2022-farneti-salazar/)
+### Link al proyecto: [proyecto-farneti/salazar](https://github.com/UCC-LabCompu2/proyecto2022-farneti-salazar.git)
 
 ## Requisitos del Primer Parcial
 
