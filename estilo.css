@@ -12,24 +12,36 @@ footer{ /*pie de pagina*/
 
 /*titulos*/
 .t1{
-    color: #00ffa0;
-    font-size: 2.5cm; /*tamaño de fuente*/
     text-align: center; /*alineacion de texto*/
-    line-height: 5cm; /*distancia entre líneas de texto*/
+    line-height: 5cm; /*distance entre líneas de texto*/
+    margin-top: 50px;
+    font-size: 150px; /*tamaño de fuente*/
+    font-weight: 900;
+    color: transparent;
+    background-image: url(https://media.giphy.com/media/UR6ZXKs8bKhuU/giphy.gif);
+    background-position: center;
+    -webkit-background-clip: text;
 }
 
 .t3{
-    color: #00ffa0;
-    font-size: 1.5cm;
+    font-size: 2cm;
+    font-weight: 800;
     text-align: center;
     line-height: 2cm;
+    color: transparent;
+    background-image: url(https://media.giphy.com/media/UR6ZXKs8bKhuU/giphy.gif);
+    background-position: center;
+    -webkit-background-clip: text;
 }
 
 .t4{
-    color: #00ffa0;
     font-size: 1.5cm;
     text-align: left;
     line-height: 2cm;
+    color: transparent;
+    background-image: url(https://media.giphy.com/media/UR6ZXKs8bKhuU/giphy.gif);
+    background-position: center;
+    -webkit-background-clip: text;
 }
 
 /*barra de menu*/
@@ -101,7 +113,7 @@ header{
     display: grid;
     grid-template-columns: repeat(4, 75px); /*define linea y tamaño de columnas*/
     grid-template-rows: 160px repeat(5, 75px);
-    background-color: #00ffa0;
+    background-image: url(https://media.giphy.com/media/H7F0zSaC9ZHZC/giphy.gif);
     padding: 20px;
     border-radius: 32px;
     box-shadow: 15px 10px 0 5px #00000033;
@@ -161,7 +173,7 @@ header{
     display: grid;
     grid-template-columns: repeat(5, 70px);
     grid-template-rows: 160px repeat(8, 65px);
-    background-color: #00ffa0;
+    background-image: url(https://media.giphy.com/media/H7F0zSaC9ZHZC/giphy.gif);
     padding: 25px;
     border-radius: 32px;
     box-shadow: 15px 10px 0 5px #00000033;
@@ -197,7 +209,7 @@ header{
     display: grid;
     grid-template-columns: repeat(9, 59px);
     grid-template-rows: 160px repeat(9, 57px);
-    background-color: #00ffa0;
+    background-image: url(https://media.giphy.com/media/H7F0zSaC9ZHZC/giphy.gif);
     padding: 25px;
     border-radius: 32px;
     box-shadow: 15px 10px 0 5px #00000033;
@@ -216,7 +228,7 @@ a:hover{ /*agranda cuando paso el cursor*/
 
 button.numero{
     font-family: 'Fraunces', serif;
-    color: white;
+    color: black;
     cursor: pointer; /*manito*/
     margin: 6px;
     padding: 0.01cm;
@@ -225,7 +237,7 @@ button.numero{
     font-size: 1.83em;
     border: none;
     line-height: 30px;
-    background-color: #03ce91;
+    background-color: paleturquoise;
     box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #00ffc11f;
     position: relative;
     top: 125px; left: -1.5px;
