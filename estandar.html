@@ -13,8 +13,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fraunces&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="imagenes/favicon.png" type="image/x-icon">
+
 </head>
-<body>
+<body onload="init()">
 <header>
   <nav>
     <div>
@@ -54,43 +55,44 @@
 <div class="contenedorestandar">
   <div class="calculadoraestandar"><img class="img2" src="imagenes/logocalculadora2.png" alt="calculadora">
     <div class="mostrarestandar">
-      <div id="v_anterior"></div>
-      <div id="v_actual"></div>
+      <div class="resultado"></div>
 <p></p>
       <div class="estandar">
+        <span id="resultado"></span>
         <p>
-          <button class="operador" value="borrar">C</button>
-          <button class="operador" value="borrartodo">CE</button>
-          <button class="operador" value="volver">←</button>
-          <button class="operador" value="dividir">÷</button>
+          <button class="operador" id="borrar">C</button>
+          <button class="operador" id="borrartodo" >CE</button>
+          <button class="operador" id="volver">←</button>
+          <button class="operador" id="dividir">÷</button>
         </p>
         <p>
-          <button class="numero" value="7">7</button>
-          <button class="numero" value="8">8</button>
-          <button class="numero" value="9">9</button>
-          <button class="operador" value="multiplicar">×</button>
+          <button class="numero" id="siete">7</button>
+          <button class="numero" id="ocho">8</button>
+          <button class="numero" id="nueve">9</button>
+          <button class="operador" id="multiplicar">×</button>
         </p>
         <p>
-          <button class="numero">4</button>
-          <button class="numero">5</button>
-          <button class="numero">6</button>
-          <button class="operador" value="restar">-</button>
+          <button class="numero" id="cuatro">4</button>
+          <button class="numero" id="cinco">5</button>
+          <button class="numero" id="seis">6</button>
+          <button class="operador" id="restar">-</button>
         </p>
         <p>
-          <button class="numero">1</button>
-          <button class="numero">2</button>
-          <button class="numero">3</button>
-          <button class="operador" value="sumar">+</button>
+          <button class="numero" id="uno">1</button>
+          <button class="numero" id="dos">2</button>
+          <button class="numero" id="tres">3</button>
+          <button class="operador" id="sumar">+</button>
         </p>
         <p>
-          <button class="operador">( )</button>
-          <button class="numero">0</button>
-          <button class="operador">.</button>
-          <button class="operador" value="igual">=</button>
+          <button class="operador" id="parentesis">( )</button>
+          <button class="numero" id="cero">0</button>
+          <button class="operador" id="punto">.</button>
+          <button class="operador" id="igual">=</button>
         </p>
       </div>
     </div>
   </div>
 </div>
+<script src="funciones.js"  type="text/javascript"></script>
 </body>
 </html>
