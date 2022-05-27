@@ -167,27 +167,6 @@ signo.onclick = function(e){
     resolver();
 }
 
-secante.onclick = function(e){
-    resultado.textContent = resultado.textContent  + "sec";
-    operandoa = resultado.textContent;
-    operacion = "sec";
-    resolver();
-}
-
-cosecante.onclick = function(e){
-    resultado.textContent = resultado.textContent  + "csc";
-    operandoa = resultado.textContent;
-    operacion = "csc";
-    resolver();
-}
-
-cotangente.onclick = function(e){
-    resultado.textContent = resultado.textContent  + "cot";
-    operandoa = resultado.textContent;
-    operacion = "cot";
-    resolver();
-}
-
 logaritmo.onclick = function(e){
     resultado.textContent = resultado.textContent  + "log";
     operandoa = resultado.textContent;
@@ -216,6 +195,29 @@ porcentaje.onclick = function(e){
     limpiar();
 }
 
+//+ eventos de click en inversa
+//cambiar nombre a sen-1, cos-1, tg-1
+secante.onclick = function(e){
+    resultado.textContent = resultado.textContent  + "sec";
+    operandoa = resultado.textContent;
+    operacion = "sec";
+    resolver();
+}
+
+cosecante.onclick = function(e){
+    resultado.textContent = resultado.textContent  + "csc";
+    operandoa = resultado.textContent;
+    operacion = "csc";
+    resolver();
+}
+
+cotangente.onclick = function(e){
+    resultado.textContent = resultado.textContent  + "cot";
+    operandoa = resultado.textContent;
+    operacion = "cot";
+    resolver();
+}
+
 //funciones
 function limpiar(){
     resultado.textContent = "";
@@ -231,6 +233,7 @@ function borrartodo(){
 function resolver(){
     var res = 0;
     switch(operacion){
+        //operaciones estandar
         case "+":
             res = parseFloat(operandoa) + parseFloat(operandob);
             break;
@@ -243,6 +246,7 @@ function resolver(){
         case "÷":
             res = parseFloat(operandoa) / parseFloat(operandob);
             break;
+        //+ operaciones cientifica
         case "!":
             let answer = 1;
             if (parseFloat(operandoa) == 0 || parseFloat(operandoa) == 1){
@@ -266,15 +270,6 @@ function resolver(){
         case "sign":
             res = Math.sign(parseFloat(operandoa));
             break;
-        case "sec":
-            res = Math.acos(parseFloat(operandoa));
-            break;
-        case "csc":
-            res = Math.asin(parseFloat(operandoa));
-            break;
-        case "cot":
-            res = Math.atan(parseFloat(operandoa));
-            break;
         case "log":
             res = Math.log10(parseFloat(operandoa));
             break;
@@ -286,6 +281,17 @@ function resolver(){
             break;
         case "%":
             res = parseFloat(operandoa) * (parseFloat(operandob)/100);
+            break;
+        //+ operaciones inversa
+        //cambiar nombre a sen-1, cos-1, tg-1
+        case "sec":
+            res = Math.acos(parseFloat(operandoa));
+            break;
+        case "csc":
+            res = Math.asin(parseFloat(operandoa));
+            break;
+        case "cot":
+            res = Math.atan(parseFloat(operandoa));
             break;
     }
     borrartodo();
