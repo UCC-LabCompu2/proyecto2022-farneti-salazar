@@ -35,13 +35,16 @@ function init(){
     var coseno = document.getElementById("coseno");
     var tangente = document.getElementById("tangente");
     var signo = document.getElementById("signo");
-    var cosecante = document.getElementById("cosecante");
-    var secante = document.getElementById("secante");
-    var cotangente = document.getElementById("cotangente");
+    var invseno = document.getElementById("invseno");
+    var invcoseno = document.getElementById("invcoseno");
+    var invtangente = document.getElementById("invtangente");
     var logaritmo = document.getElementById("logaritmo");
     var lognatural = document.getElementById("lognatural");
     var raiz = document.getElementById("raiz");
     var porcentaje = document.getElementById("porcentaje");
+    var exponencial = document.getElementById("exp");
+    var en = document.getElementById("en");
+    var cuadrado = document.getElementById("cuadrado");
 }
 
 //Eventos de click
@@ -109,6 +112,7 @@ multiplicar.onclick = function(e){
     operacion = "×";
     limpiar();
 }
+
 dividir.onclick = function(e){
     resultado.textContent = resultado.textContent  + "÷";
     operandoa = resultado.textContent;
@@ -197,24 +201,45 @@ porcentaje.onclick = function(e){
 
 //+ eventos de click en inversa
 //cambiar nombre a sen-1, cos-1, tg-1
-secante.onclick = function(e){
-    resultado.textContent = resultado.textContent  + "sec";
+invseno.onclick = function(e){
+    resultado.textContent = resultado.textContent  + "invseno";
     operandoa = resultado.textContent;
-    operacion = "sec";
+    operacion = "invseno";
     resolver();
 }
 
-cosecante.onclick = function(e){
-    resultado.textContent = resultado.textContent  + "csc";
+invcoseno.onclick = function(e){
+    resultado.textContent = resultado.textContent  + "invcoseno";
     operandoa = resultado.textContent;
-    operacion = "csc";
+    operacion = "invcoseno";
     resolver();
 }
 
-cotangente.onclick = function(e){
-    resultado.textContent = resultado.textContent  + "cot";
+invtangente.onclick = function(e){
+    resultado.textContent = resultado.textContent  + "invtangente";
     operandoa = resultado.textContent;
-    operacion = "cot";
+    operacion = "invtangente";
+    resolver();
+}
+
+exp.onclick = function (e){
+    resultado.textContent = resultado.textContent + "exp";
+    operandoa = resultado.textContent;
+    operacion = "exp";
+    resolver();
+}
+
+en.onclick = function(e){
+    resultado.textContent = resultado.textContent + "en";
+    operandoa = resultado.textContent;
+    operacion = "en";
+    resolver();
+}
+
+cuadrado.onclick = function(e){
+    resultado.textContent = resultado.textContent  + "cuadrado";
+    operandoa = resultado.textContent;
+    operacion = "cuadrado";
     resolver();
 }
 
@@ -283,15 +308,23 @@ function resolver(){
             res = parseFloat(operandoa) * (parseFloat(operandob)/100);
             break;
         //+ operaciones inversa
-        //cambiar nombre a sen-1, cos-1, tg-1
-        case "sec":
-            res = Math.acos(parseFloat(operandoa));
-            break;
-        case "csc":
+        case "invseno":
             res = Math.asin(parseFloat(operandoa));
             break;
-        case "cot":
+        case "invcoseno":
+            res = Math.acos(parseFloat(operandoa));
+            break;
+        case "invtangente":
             res = Math.atan(parseFloat(operandoa));
+            break;
+        case "exp":
+            res = Math.pow(10, parseFloat(operandoa));
+            break;
+        case "en":
+            res =  Math.exp(parseFloat(operandoa));
+            break;
+        case "cuadrado":
+            res = Math.pow(parseFloat(operandoa), 2);
             break;
     }
     borrartodo();
