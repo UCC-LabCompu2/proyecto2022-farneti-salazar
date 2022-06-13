@@ -212,6 +212,7 @@ function borrartodo(){
 
 function resolver(){
     var res = 0;
+    var aux = 0;
     switch(operacion){
         //operaciones estandar
         case "+":
@@ -239,38 +240,47 @@ function resolver(){
             res = answer;
             break;
         case "sen":
-            res = Math.sin(parseFloat(operandoa).toFixed(5));
+            aux = Math.sin(parseFloat(operandoa));
+            res = Math.round(aux*100.0)/100.0;
             break;
         case "cos":
-            res = Math.cos(parseFloat(operandoa).toFixed(5));
+            aux = Math.cos(parseFloat(operandoa));
+            res = Math.round(aux*100.0)/100.0;
             break;
         case "tg":
-            res = Math.tan(parseFloat(operandoa).toFixed(5));
+            aux = Math.tan(parseFloat(operandoa));
+            res = Math.round(aux*100.0)/100.0;
             break;
         case "sign":
             res = Math.sign(parseFloat(operandoa));
             break;
         case "log":
-            res = Math.log10(parseFloat(operandoa).toFixed(5));
+            aux = Math.log10(parseFloat(operandoa));
+            res = Math.round(aux*100.0)/100.0;
             break;
         case "ln":
-            res = Math.log(parseFloat(operandoa).toFixed(5));
+            aux = Math.log(parseFloat(operandoa));
+            res = Math.round(aux*100.0)/100.0;
             break;
         case "√":
-            res = Math.sqrt(parseFloat(operandoa));
+            aux = Math.sqrt(parseFloat(operandoa));
+            res = Math.round(aux*100.0)/100.0;
             break;
         case "%":
             res = parseFloat(operandoa) * (parseFloat(operandob)/100);
             break;
         //+ operaciones inversa
         case "sen⁻¹":
-            res = Math.asin(parseFloat(operandoa));
+            aux = Math.asin(parseFloat(operandoa));
+            res = Math.round(aux*100.0)/100.0;
             break;
         case "cos⁻¹":
-            res = Math.acos(parseFloat(operandoa));
+            aux = Math.acos(parseFloat(operandoa));
+            res = Math.round(aux*100.0)/100.0;
             break;
         case "tg⁻¹":
-            res = Math.atan(parseFloat(operandoa));
+            aux = Math.atan(parseFloat(operandoa));
+            res = Math.round(aux*100.0)/100.0;
             break;
         case "10ⁿ":
             res = Math.pow(10, parseFloat(operandoa));
