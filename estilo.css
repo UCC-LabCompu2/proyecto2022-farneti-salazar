@@ -326,4 +326,27 @@ label {
     text-align: right;
 }
 
+.btn1 {
+    font-family: 'Fraunces', serif;
+    padding: 15px 25px;
+    margin: 20px;
+    font-size: 18px;
+    border: 2px solid black;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(to right, transparent 50%, #00ffa0 50%);
+    background-size: 200%;
+    background-position: left;
+    transition: background-position 0.5s;
+    text-align: center;
+    cursor: pointer;
 
+
+}
+.btn1:hover {
+    background-position: right;
+    color: black;
+    font-weight: 700;
+    background: #00ffa0;
+    box-shadow: 0 0 10px #00ffa0, 0 0 40px #00ffa0, 0 0 80px #00ffa0;
+}
