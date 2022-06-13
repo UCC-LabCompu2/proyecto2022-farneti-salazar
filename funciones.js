@@ -157,44 +157,44 @@ porcentaje.onclick = function(){
 
 //+ eventos de click en inversa
 invseno.onclick = function(){
-    resultado.textContent = resultado.textContent  + "invseno";
+    resultado.textContent = resultado.textContent  + "sen⁻¹";
     operandoa = resultado.textContent;
-    operacion = "invseno";
+    operacion = "sen⁻¹";
     resolver();
 }
 
 invcoseno.onclick = function(){
-    resultado.textContent = resultado.textContent  + "invcoseno";
+    resultado.textContent = resultado.textContent  + "cos⁻¹";
     operandoa = resultado.textContent;
-    operacion = "invcoseno";
+    operacion = "cos⁻¹";
     resolver();
 }
 
 invtangente.onclick = function(){
-    resultado.textContent = resultado.textContent  + "invtangente";
+    resultado.textContent = resultado.textContent  + "tg⁻¹";
     operandoa = resultado.textContent;
-    operacion = "invtangente";
+    operacion = "tg⁻¹";
     resolver();
 }
 
 exp.onclick = function(){
-    resultado.textContent = resultado.textContent + "exp";
+    resultado.textContent = resultado.textContent + "10ⁿ";
     operandoa = resultado.textContent;
-    operacion = "exp";
+    operacion = "10ⁿ";
     resolver();
 }
 
 en.onclick = function(){
-    resultado.textContent = resultado.textContent + "en";
+    resultado.textContent = resultado.textContent + "eⁿ";
     operandoa = resultado.textContent;
-    operacion = "en";
+    operacion = "eⁿ";
     resolver();
 }
 
 cuadrado.onclick = function(){
-    resultado.textContent = resultado.textContent  + "cuadrado";
+    resultado.textContent = resultado.textContent  + "x²";
     operandoa = resultado.textContent;
-    operacion = "cuadrado";
+    operacion = "x²";
     resolver();
 }
 
@@ -239,22 +239,22 @@ function resolver(){
             res = answer;
             break;
         case "sen":
-            res = Math.sin(parseFloat(operandoa));
+            res = Math.sin(parseFloat(operandoa).toFixed(5));
             break;
         case "cos":
-            res = Math.cos(parseFloat(operandoa));
+            res = Math.cos(parseFloat(operandoa).toFixed(5));
             break;
         case "tg":
-            res = Math.tan(parseFloat(operandoa));
+            res = Math.tan(parseFloat(operandoa).toFixed(5));
             break;
         case "sign":
             res = Math.sign(parseFloat(operandoa));
             break;
         case "log":
-            res = Math.log10(parseFloat(operandoa));
+            res = Math.log10(parseFloat(operandoa).toFixed(5));
             break;
         case "ln":
-            res = Math.log(parseFloat(operandoa));
+            res = Math.log(parseFloat(operandoa).toFixed(5));
             break;
         case "√":
             res = Math.sqrt(parseFloat(operandoa));
@@ -263,22 +263,22 @@ function resolver(){
             res = parseFloat(operandoa) * (parseFloat(operandob)/100);
             break;
         //+ operaciones inversa
-        case "invseno":
+        case "sen⁻¹":
             res = Math.asin(parseFloat(operandoa));
             break;
-        case "invcoseno":
+        case "cos⁻¹":
             res = Math.acos(parseFloat(operandoa));
             break;
-        case "invtangente":
+        case "tg⁻¹":
             res = Math.atan(parseFloat(operandoa));
             break;
-        case "exp":
+        case "10ⁿ":
             res = Math.pow(10, parseFloat(operandoa));
             break;
-        case "en":
+        case "eⁿ":
             res =  Math.exp(parseFloat(operandoa));
             break;
-        case "cuadrado":
+        case "x²":
             res = Math.pow(parseFloat(operandoa), 2);
             break;
     }
