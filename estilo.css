@@ -170,28 +170,6 @@ header{
     display:block;
 }
 
-.contenedorcientifica{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.calculadoracientifica{
-    display: grid;
-    grid-template-columns: repeat(5, 70px);
-    grid-template-rows: 160px repeat(8, 65px);
-    background-image: url(https://media.giphy.com/media/H7F0zSaC9ZHZC/giphy.gif);
-    padding: 25px;
-    border-radius: 32px;
-    box-shadow: 15px 10px 0 5px #00000033;
-}
-
-.img1{ /*ubicacion del casio*/
-    position: relative;
-    top: -5.45cm; left: 138px;
-}
-
 .mostrarcientifica{
     grid-area: 1/-1/1/1;
     padding: 16px;
@@ -313,7 +291,7 @@ ul { /*lista*/
     padding: 2px;
     margin: 2px;
     font-family: 'Merriweather Sans', sans-serif;
-    color: white;
+    color: black;
 }
 
 li{ /*espacio entre linea*/
@@ -324,29 +302,4 @@ label {
     display: inline-block; /*funciona como bloque en linea*/
     width: 145px;
     text-align: right;
-}
-
-.btn1 {
-    font-family: 'Fraunces', serif;
-    padding: 15px 25px;
-    margin: 20px;
-    font-size: 18px;
-    border: 2px solid black;
-    color: white;
-    cursor: pointer;
-    background: linear-gradient(to right, transparent 50%, #00ffa0 50%);
-    background-size: 200%;
-    background-position: left;
-    transition: background-position 0.5s;
-    text-align: center;
-    cursor: pointer;
-
-
-}
-.btn1:hover {
-    background-position: right;
-    color: black;
-    font-weight: 700;
-    background: #00ffa0;
-    box-shadow: 0 0 10px #00ffa0, 0 0 40px #00ffa0, 0 0 80px #00ffa0;
 }
