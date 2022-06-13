@@ -1,26 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>canvas-calculadora</title>
-    <link rel="stylesheet" href="estilo.css">
-    <script type="text/javascript" src="funciones.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces&display=swap" rel="stylesheet">
+    <link href="imagenes/favicon.png" rel="shortcut icon" type="image/x-icon">
     <style>
         body {
+            margin: 1cm;
             background-position: center;
             background-image: url("imagenes/Captura de pantalla 2022-06-12 190438.png");
             background-repeat: no-repeat;
-            background-attachment: scroll;
         }
     </style>
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+    <script src="funciones.js"  type="text/javascript"></script>
 </head>
 <body>
+<header>
+    <nav>
+        <div>
+            <ul class="menu">
+                <li><a href="index.html" ><img class="home" src="imagenes/inicio.png" alt="inicio"></a></li>
+                <li><a><img src="imagenes/about.png" alt="contacto"></a>
+                    <ul>
+                        <li><a>Email</a>
+                            <ul>
+                                <li><a href="mailto:2113289@ucc.edu.ar?">Melanie Farneti</a></li>
+                                <li><a href="mailto:2116480@ucc.edu.ar?">Fernanda Salazar</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a><img src="imagenes/login.png" alt="registrarse"></a>
+                    <ul>
+                        <li><a href="registrarme.html">Registrarse</a>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <ul id="menucientifica">
+                <li><a onclick="borrarGrafico()">Borrar</a></li>
+                <li><a href="https://www.geogebra.org/calculator">Geogebra</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
 <canvas id="canvasAdibujar" class="ejer" onmousemove="dibujar(event)" width="1500px" height="600px">
 </canvas>
-
-<button onclick="borrarGrafico()" class="btn1" type="button">
-    Borrar
-</button>
-
 </body>
 </html>
