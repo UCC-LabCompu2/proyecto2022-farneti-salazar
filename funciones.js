@@ -285,6 +285,7 @@ function resolver(){
     borrartodo();
     resultado.textContent = res;
 }
+var event;
 var bandera;
 function dibujar(event) {
     var canvas = document.getElementById("canvasAdibujar");

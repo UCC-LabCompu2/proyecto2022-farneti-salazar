@@ -340,9 +340,13 @@ label {
     transition: background-position 0.5s;
     text-align: center;
     cursor: pointer;
+
+
 }
 .btn1:hover {
     background-position: right;
     color: black;
     font-weight: 700;
+    background: #00ffa0;
+    box-shadow: 0 0 10px #00ffa0, 0 0 40px #00ffa0, 0 0 80px #00ffa0;
 }
