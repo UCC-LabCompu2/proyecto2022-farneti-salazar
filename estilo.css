@@ -1,6 +1,6 @@
 * {
     font-family: 'Merriweather Sans', sans-serif;
-    color: white;
+    color: black;
 }
 
 body{ /*cuenta como tag (?*/
@@ -277,7 +277,7 @@ button:active.operador{
 }
 
 /*formulario registrarse*/
-form { /*recuadro verde*/
+form{ /*recuadro verde*/
     margin: 0 auto;
     width: 400px;
     padding: 1em;
@@ -286,19 +286,17 @@ form { /*recuadro verde*/
     border-radius: 1em;
 }
 
-ul { /*lista*/
+ul{ /*lista*/
     list-style: none;
     padding: 2px;
     margin: 2px;
-    font-family: 'Merriweather Sans', sans-serif;
-    color: black;
 }
 
 li{ /*espacio entre linea*/
     margin-top: 0.5cm;
 }
 
-label {
+label{
     display: inline-block; /*funciona como bloque en linea*/
     width: 145px;
     text-align: right;
