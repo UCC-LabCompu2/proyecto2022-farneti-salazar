@@ -334,7 +334,6 @@ function dibujar(event) {
 
     if (bandera) {
         ctx.fillRect(posX, posY, 5, 5);
-        ctx.fill;
     }
 }
 
@@ -343,7 +342,6 @@ function dibujar(event) {
  */
 function borrarGrafico() {
     var canvas = document.getElementById("canvasAdibujar");
-    var ctx = canvas.getContext("2d");
 
     canvas.width = canvas.width;
 }

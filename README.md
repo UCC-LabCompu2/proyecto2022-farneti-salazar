@@ -59,7 +59,7 @@ Estructura de Proyecto Lab de Compu II - 2022
 ## Requisitos del Segundo Parcial
 
 ### Sobre el proyecto general
-- [ ] Todas las correcciones y mejoras solicitadas durante el primer parcial deben estar corregidas.
+- [x] Todas las correcciones y mejoras solicitadas durante el primer parcial deben estar corregidas.
 - [ ] No debe haber errores presentes en el código (realizar Code > Inspect Code para verificar que no haya errores)
 - [ ] No debe haber errores JavaScripts presentes. (ver con F12 si hay errores)
 
