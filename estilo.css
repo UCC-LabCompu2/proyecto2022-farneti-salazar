@@ -301,3 +301,10 @@ label{
     width: 145px;
     text-align: right;
 }
+
+canvas{
+    margin: 1cm;
+    background-position: center;
+    background-image: url("imagenes/Captura de pantalla 2022-06-12 190438.png");
+    background-repeat: no-repeat;
+}
