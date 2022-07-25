@@ -1,8 +1,13 @@
-//declaro variables
+/**
+ * Declaracion de variables
+ */
 var operandoa;
 var operandob;
 var operacion;
 
+/**
+ * Eventos de click
+ */
 //Eventos de click
 uno.onclick = function(){
     resultado.textContent = resultado.textContent  + "1";
@@ -81,8 +86,9 @@ igual.onclick = function(){
     resolver();
 }
 
-//+ eventos de click en cientifica
-//constantes
+/**
+ * Eventos de click en cientifica
+ */
 pi.onclick = function(){
     resultado.textContent = resultado.textContent  + "3.14";
 }
@@ -155,7 +161,9 @@ porcentaje.onclick = function(){
     limpiar();
 }
 
-//+ eventos de click en inversa
+/**
+ * Eventos de click en inversa
+ */
 invseno.onclick = function(){
     resultado.textContent = resultado.textContent  + "sen⁻¹";
     operandoa = resultado.textContent;
@@ -198,11 +206,16 @@ cuadrado.onclick = function(){
     resolver();
 }
 
-//funciones
+/**
+ * Funcion limpiar(): elimina el contenido en el contenedor
+ */
 function limpiar(){
     resultado.textContent = "";
 }
 
+/**
+ * Funcion borrartodo(): elimina el contenido en el contenedor y reinicializa las variables en cero
+ */
 function borrartodo(){
     resultado.textContent = "";
     operandoa = 0;
@@ -210,6 +223,9 @@ function borrartodo(){
     operacion = "";
 }
 
+/**
+ * Funcion resolver(): segun lo que se elija a traves de un evento de click, realiza la operacion correspondiente
+ */
 function resolver(){
     var res = 0;
     var aux = 0;
@@ -295,8 +311,16 @@ function resolver(){
     borrartodo();
     resultado.textContent = res;
 }
+
+/**
+ * Canvas
+ */
 var event;
 var bandera;
+
+/**
+ * Funcion dibujar(): grafica segun el estado del mouse
+ */
 function dibujar(event) {
     var canvas = document.getElementById("canvasAdibujar");
     var ctx = canvas.getContext("2d");
@@ -314,6 +338,10 @@ function dibujar(event) {
     }
 
 }
+
+/**
+ * Funcion borrarGrafico(): elimina el contenido en el canvas
+ */
 function borrarGrafico() {
     var canvas = document.getElementById("canvasAdibujar");
     var ctx = canvas.getContext("2d");
