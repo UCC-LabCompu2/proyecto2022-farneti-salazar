@@ -6,7 +6,6 @@
 body{ /*cuenta como tag (?*/
     font-family: 'Merriweather Sans', sans-serif;
     background-color: #a000ff;
-    margin: 1cm;
 }
 
 footer{ /*pie de pagina*/
@@ -262,6 +261,57 @@ button.operador{
     top: 125px; left: -1.5px;
 }
 
+button.borrar{
+    font-family: 'Fraunces', serif;
+    color: white;
+    cursor: pointer;
+    margin: 0;
+    padding: 2px;
+    width: 4.7cm;
+    border-radius: 10px;
+    font-size: 1.65em;
+    border: none;
+    line-height: 30px;
+    background-color: #ffa07a;
+    box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #00ffc11f;
+    position: relative;
+    top: 125px; left: -1.5px;
+}
+
+button.igual{
+    font-family: 'Fraunces', serif;
+    color: white;
+    cursor: pointer;
+    margin: 0;
+    padding: 2px;
+    width: 3cm;
+    border-radius: 10px;
+    font-size: 1.65em;
+    border: none;
+    line-height: 30px;
+    background-color: #ffa07a;
+    box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #00ffc11f;
+    position: relative;
+    top: 125px; left: -1.5px;
+}
+
+button.punto{
+    font-family: 'Fraunces', serif;
+    color: #ffa07a;
+    cursor: pointer;
+    margin: 0;
+    padding: 2px;
+    width: 1.5cm;
+    border-radius: 10px;
+    font-size: 1.65em;
+    border: none;
+    line-height: 30px;
+    background-color: #ffa07a;
+    box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #00ffc11f;
+    position: relative;
+    top: 125px; left: -1.5px;
+}
+
 button:active.enviar{
     font-size: 2em;
     background-color: #006f54;
@@ -272,6 +322,14 @@ button:active.numero{
 }
 
 button:active.operador{
+    background-color: #ff4500;
+}
+
+button:active.borrar{
+    background-color: #ff4500;
+}
+
+button:active.igual{
     background-color: #ff4500;
 }
 
@@ -296,8 +354,8 @@ li{ /*espacio entre linea*/
 }
 
 canvas{
-    margin: 1cm;
-    background-position: center;
+    display: flex;
+    position: relative;
     background-image: url("imagenes/fondo canvas.png");
-    background-repeat: no-repeat;
+    border: 1px solid black;;
 }

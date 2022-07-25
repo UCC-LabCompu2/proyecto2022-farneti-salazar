@@ -336,7 +336,6 @@ function dibujar(event) {
         ctx.fillRect(posX, posY, 5, 5);
         ctx.fill;
     }
-
 }
 
 /**
