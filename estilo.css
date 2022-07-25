@@ -183,15 +183,14 @@ header{
     box-shadow: 0 0 0 10px #00000033;
 }
 
-/*completa*/
-.contenedorcompleta{
+.contenedorcientifica{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
 }
 
-.calculadoracompleta{
+.calculadoracientifica{
     display: grid;
     grid-template-columns: repeat(9, 59px);
     grid-template-rows: 160px repeat(9, 57px);
@@ -296,15 +295,9 @@ li{ /*espacio entre linea*/
     margin-top: 0.5cm;
 }
 
-label{
-    display: inline-block; /*funciona como bloque en linea*/
-    width: 145px;
-    text-align: right;
-}
-
 canvas{
     margin: 1cm;
     background-position: center;
-    background-image: url("imagenes/Captura de pantalla 2022-06-12 190438.png");
+    background-image: url("imagenes/fondo canvas.png");
     background-repeat: no-repeat;
 }
