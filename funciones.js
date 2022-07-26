@@ -207,14 +207,18 @@ cuadrado.onclick = function(){
 }
 
 /**
- * Funcion limpiar(): elimina el contenido en el contenedor
+ * elimina el contenido en el contenedor
+ * @method limpiar()
+ * @return " "
  */
 function limpiar(){
     resultado.textContent = "";
 }
 
 /**
- * Funcion borrartodo(): elimina el contenido en el contenedor y reinicializa las variables en cero
+ * elimina el contenido en el contenedor y reinicializa las variables en cero
+ * @method borrartodo()
+ * @return " 0 " - cero
  */
 function borrartodo(){
     resultado.textContent = "";
@@ -224,7 +228,11 @@ function borrartodo(){
 }
 
 /**
- * Funcion resolver(): segun lo que se elija a traves de un evento de click, realiza la operacion correspondiente
+ * segun lo que se elija a traves de un evento de click, la operacion entra en un switch y resuelve segun corresponda
+ * @method resolver()
+ * @param {number} parámetro a - almacena un numero cuando se ingresa la operacion a realizar
+ * @param {number} parámetro b - almacena un numero cuando se hace click en el boton " = "
+ * @return " res " - resultado
  */
 function resolver(){
     var res = 0;
@@ -319,7 +327,10 @@ var event;
 var bandera;
 
 /**
- * Funcion dibujar(): grafica segun el estado del mouse
+ * grafica segun el estado del mouse
+ * @method dibujar()
+ * @param parámetro a - evento de click segun se presione o no el mouse
+ * @return punto
  */
 function dibujar(event) {
     var canvas = document.getElementById("canvasAdibujar");
@@ -338,7 +349,9 @@ function dibujar(event) {
 }
 
 /**
- * Funcion borrarGrafico(): elimina el contenido en el canvas
+ * elimina el contenido en el canvas
+ * @method borrarGrafico()
+ * @return canvas limpio
  */
 function borrarGrafico() {
     var canvas = document.getElementById("canvasAdibujar");

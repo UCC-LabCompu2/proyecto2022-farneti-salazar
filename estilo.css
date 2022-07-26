@@ -7,7 +7,6 @@
 }
 
 body{ /*cuenta como tag (?*/
-
     font-family: 'Merriweather Sans', sans-serif;
     background-color: #a000ff;
 }
@@ -21,11 +20,11 @@ footer{ /*pie de pagina*/
 /*--titulos--*/
 .t1{ /* "calculadora" */
     text-align: center; /*alineacion de texto*/
-    line-height: 5cm; /*distance entre líneas de texto*/
+    line-height: 5cm; /*distancia entre líneas de texto*/
     margin-top: 50px;
     font-size: 150px; /*tamaño de fuente*/
     font-weight: 900;
-    color: transparent;
+    color: transparent; /* vv insercion de gif como fondo de letras vv */
     background-image: url(https://media.giphy.com/media/UR6ZXKs8bKhuU/giphy.gif);
     background-position: center;
     -webkit-background-clip: text;
@@ -186,7 +185,6 @@ button{
     left:50%;
 }
 
-
 .operador{
     color: white;
     margin: 0;
@@ -224,15 +222,7 @@ button:active.numero{
     background-color: #006f54;
 }
 
-button:active.operador{
-    background-color: #ff4500;
-}
-
-button:active.borrar{
-    background-color: #ff4500;
-}
-
-button:active.igual{
+button:active.operador, button:active.borrar, button:active.igual{
     background-color: #ff4500;
 }
 
@@ -256,9 +246,8 @@ li{ /*espacio entre linea*/
     margin-top: 0.5cm;
 }
 
-
+/*--------*/
 canvas{
     background-image: url("imagenes/fondo canvas.png");
     border: 2px solid black;
-
 }
