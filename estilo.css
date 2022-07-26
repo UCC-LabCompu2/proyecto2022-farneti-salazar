@@ -1,3 +1,5 @@
+/*--hoja de estilos--*/
+/*--aplica a toda la pagina*/
 * {
     font-family: 'Merriweather Sans', sans-serif;
     color: black;
@@ -6,6 +8,7 @@
 body{ /*cuenta como tag (?*/
     font-family: 'Merriweather Sans', sans-serif;
     background-color: #a000ff;
+    margin: 1cm;
 }
 
 footer{ /*pie de pagina*/
@@ -14,8 +17,8 @@ footer{ /*pie de pagina*/
     margin: 2cm;
 }
 
-/*titulos*/
-.t1{
+/*--titulos--*/
+.t1{ /* "calculadora" */
     text-align: center; /*alineacion de texto*/
     line-height: 5cm; /*distance entre líneas de texto*/
     margin-top: 50px;
@@ -27,7 +30,7 @@ footer{ /*pie de pagina*/
     -webkit-background-clip: text;
 }
 
-.t3{
+.t2{ /*--modo--*/
     font-size: 2cm;
     font-weight: 800;
     text-align: center;
@@ -38,7 +41,7 @@ footer{ /*pie de pagina*/
     -webkit-background-clip: text;
 }
 
-.t4{
+.t3{ /*--modo estandar/cientifica--*/
     font-size: 1.5cm;
     text-align: left;
     line-height: 2cm;
@@ -48,14 +51,9 @@ footer{ /*pie de pagina*/
     -webkit-background-clip: text;
 }
 
-/*barra de menu*/
-header{
-    font-family: 'Merriweather Sans', sans-serif;
-    margin: 0;
-}
-
+/*--barra de menu principal--*/
 .menu{
-    display: flex; /*elemento flexible que puede alinarse*/
+    display: flex; /*alinea los elementos uno a la izquierda del otro*/
     justify-content: center; /*ubicacion al centro del eje x*/
 }
 
@@ -82,8 +80,12 @@ header{
     display: flex; /*flexible, me deja tener la pestaña de email mas grande*/
 }
 
-/*estandar*/
-#menuestandar li>a{
+/*-- submenu para la navegacion entre paginas--*/
+#submenu{
+    margin-bottom: 3cm; /*margen debajo del menu*/
+}
+
+#submenu li>a{
     background-color: #00ffa0;
     color: white;
     padding: 10px;
@@ -91,28 +93,30 @@ header{
     text-decoration: none;
     min-width: 150px;
     border-radius: 32px;
-}
-
-#menuestandar>li{
-    float: left; /*flotante que alinea elemento a la izquierda*/
+    float: left; /*pone los elementos alineados a la izquierda del anterior*/
     text-align:center; /*alinea el texto*/
 }
 
-#menuestandar>li>ul{
-    display: none;
+/*--calculadora (cosas en comun)*/
+.mostrarcalculadora{ /*cuadro negro y organizacion de elementos*/
+    grid-area: 1/-1/1/1; /*tamaño y la ubicación de lo negro*/
+    padding: 16px;
+    display: flex;
+    margin: 10px 10px 10px;
+    flex-direction: column; /*alineacion de los elementos*/
+    background-color: #363636;
+    border-radius: 32px;
+    text-align: center;
+    box-shadow: 0 0 0 10px #00000033;
 }
 
-#menuestandar>li:hover>ul {
-    display:block;
-}
-
-.contenedorestandar{ /*borde exterior verde de la calculadora*/
+.contenedorcalculadora{ /*borde exterior de la calculadora*/
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.calculadoraestandar{ /*contenedor verde*/
+.calculadoraestandar{ /*contenedor multicolor de --estandar--, tamaños de objetos y demas*/
     display: grid;
     grid-template-columns: repeat(4, 75px); /*define linea y tamaño de columnas*/
     grid-template-rows: 160px repeat(5, 75px);
@@ -123,73 +127,7 @@ header{
     position: center;
 }
 
-.mostrarestandar{ /*cuadro negro*/
-    grid-area: 1/-1/1/1; /*tamaño y la ubicación de lo negro*/
-    padding: 16px;
-    display: flex;
-    margin: 10px 10px 10px;
-    flex-direction: column; /*alineacion de los elementos*/
-    background-color: #363636;
-    border-radius: 32px;
-    text-align: right;
-    box-shadow: 0 0 0 10px #00000033;
-}
-
-#resultado{
-    font-size: 40px;
-    color: #CCCCCC;
-}
-
-.img2{ /*ubicacion de casio*/
-    position: relative;
-    top: -5.4cm; left: 118px;
-}
-
-/*cientifica*/
-#menucientifica li>a{
-    background-color: #00ffa0;
-    color: white;
-    padding: 10px;
-    display: block;
-    text-decoration: none;
-    min-width: 150px;
-    border-radius: 32px;
-}
-
-#menucientifica>li{
-    float: left;
-    text-align:center;
-}
-
-#menucientifica>li>ul{
-    display: none;
-}
-
-#menucientifica>li:hover>ul {
-    display:block;
-}
-
-.mostrarcientifica{
-    grid-area: 1/-1/1/1;
-    padding: 16px;
-    display: flex;
-    margin: 10px 10px 10px;
-    flex-direction: column;
-    align-items: center;
-    background-color: #363636;
-    border-radius: 32px;
-    text-align: center;
-    box-shadow: 0 0 0 10px #00000033;
-}
-
-.contenedorcientifica{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
-.calculadoracientifica{
+.calculadoracientifica{ /*contenedor multicolor de --cientifica--, tamaños de objetos y demas*/
     display: grid;
     grid-template-columns: repeat(9, 59px);
     grid-template-rows: 160px repeat(9, 57px);
@@ -200,64 +138,71 @@ header{
     position: center;
 }
 
-.img3{
+#resultado{ /*numeros que aparecen en el recuadro negro*/
+    font-size: 40px;
+    color: #CCCCCC;
+}
+
+.img1{ /*ubicacion de casio en estandar*/
+    position: relative;
+    top: -5.4cm; left: 118px;
+}
+
+.img2{ /*ubicacion de casio en cientifica*/
     position: relative;
     top: -5.45cm; left: 225px;
 }
 
-/*botones*/
+/*--botones--*/
 a:hover{ /*agranda cuando paso el cursor*/
     font-size: 1.5em;
 }
 
-button.numero{
+button{
     font-family: 'Fraunces', serif;
-    color: black;
     cursor: pointer; /*manito*/
-    margin: 6px;
-    padding: 0.01cm;
-    width: 45px;
     border-radius: 10px;
     font-size: 1.83em;
+    margin: 6px;
     border: none;
     line-height: 30px;
-    background-color: paleturquoise;
     box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #00ffc11f;
     position: relative;
+}
+
+.numero{
+    color: black;
+    padding: 0.01cm;
+    width: 45px;
+    background-color: paleturquoise;
     top: 125px; left: -1.5px;
 }
 
-button.enviar{
-    font-family: 'Fraunces', serif;
+.enviar {
     color: white;
-    cursor: pointer;
-    margin: 6px;
     padding: 8px 10px;
-    border-radius: 10px;
-    font-size: 1.83em;
-    border: none;
-    line-height: 30px;
     background-color: #03ce91;
-    box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #00ffc11f;
-    position: relative;
     left:50%;
 }
 
 
-button.operador{
-    font-family: 'Fraunces', serif;
+.operador{
     color: white;
-    cursor: pointer;
     margin: 0;
     padding: 2px;
     width: 1.5cm;
-    border-radius: 10px;
     font-size: 1.65em;
-    border: none;
-    line-height: 30px;
     background-color: #ffa07a;
-    box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #00ffc11f;
-    position: relative;
+    top: 125px; left: -1.5px;
+}
+
+.punto{
+    color: #ffa07a;
+    margin: 0;
+    padding: 2px;
+    width: 1.5cm;
+    font-size: 1.65em;
+    background-color: #ffa07a;
     top: 125px; left: -1.5px;
 }
 
@@ -267,23 +212,6 @@ button.operador{
 
 #sacartodo{
     width: 4.7cm;
-}
-
-button.punto{
-    font-family: 'Fraunces', serif;
-    color: #ffa07a;
-    cursor: pointer;
-    margin: 0;
-    padding: 2px;
-    width: 1.5cm;
-    border-radius: 10px;
-    font-size: 1.65em;
-    border: none;
-    line-height: 30px;
-    background-color: #ffa07a;
-    box-shadow: 5px 5px 10px -3px #00000040, -5px -5px 15px 3px #00ffc11f;
-    position: relative;
-    top: 125px; left: -1.5px;
 }
 
 button:active.enviar{
@@ -331,5 +259,6 @@ canvas{
     display: flex;
     position: relative;
     background-image: url("imagenes/fondo canvas.png");
-    border: 1px solid black;;
+    border: 1px solid black;
+
 }
