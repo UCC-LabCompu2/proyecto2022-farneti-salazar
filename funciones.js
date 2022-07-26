@@ -185,20 +185,6 @@ invtangente.onclick = function(){
     resolver();
 }
 
-exp.onclick = function(){
-    resultado.textContent = resultado.textContent + "10ⁿ";
-    operandoa = resultado.textContent;
-    operacion = "10ⁿ";
-    resolver();
-}
-
-en.onclick = function(){
-    resultado.textContent = resultado.textContent + "eⁿ";
-    operandoa = resultado.textContent;
-    operacion = "eⁿ";
-    resolver();
-}
-
 cuadrado.onclick = function(){
     resultado.textContent = resultado.textContent  + "x²";
     operandoa = resultado.textContent;
@@ -305,12 +291,6 @@ function resolver(){
         case "tg⁻¹":
             aux = Math.atan(parseFloat(operandoa));
             res = Math.round(aux*100.0)/100.0;
-            break;
-        case "10ⁿ":
-            res = Math.pow(10, parseFloat(operandoa));
-            break;
-        case "eⁿ":
-            res =  Math.exp(parseFloat(operandoa));
             break;
         case "x²":
             res = Math.pow(parseFloat(operandoa), 2);
