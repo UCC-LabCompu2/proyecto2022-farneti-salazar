@@ -345,5 +345,3 @@ function borrarGrafico() {
 
     canvas.width = canvas.width;
 }
-
-

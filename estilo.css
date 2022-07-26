@@ -3,12 +3,12 @@
 * {
     font-family: 'Merriweather Sans', sans-serif;
     color: black;
+    cursor: pointer;
 }
 
 body{ /*cuenta como tag (?*/
     font-family: 'Merriweather Sans', sans-serif;
     background-color: #a000ff;
-    margin: 1cm;
 }
 
 footer{ /*pie de pagina*/
@@ -255,10 +255,11 @@ li{ /*espacio entre linea*/
     margin-top: 0.5cm;
 }
 
+
 canvas{
-    display: flex;
-    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
     background-image: url("imagenes/fondo canvas.png");
-    border: 1px solid black;
+    border: 2px solid black;
 
 }
