@@ -20,10 +20,8 @@ footer{ /*pie de pagina*/
 /*--titulos--*/
 .t1{ /* "calculadora" */
     text-align: center; /*alineacion de texto*/
-    line-height: 5cm; /*distancia entre líneas de texto*/
     margin-top: 50px;
     font-size: 150px; /*tamaño de fuente*/
-    font-weight: 900;
     color: transparent; /* vv insercion de gif como fondo de letras vv */
     background-image: url(https://media.giphy.com/media/UR6ZXKs8bKhuU/giphy.gif);
     background-position: center;
@@ -32,9 +30,7 @@ footer{ /*pie de pagina*/
 
 .t2{ /*--modo--*/
     font-size: 2cm;
-    font-weight: 800;
     text-align: center;
-    line-height: 2cm;
     color: transparent;
     background-image: url(https://media.giphy.com/media/UR6ZXKs8bKhuU/giphy.gif);
     background-position: center;
@@ -44,7 +40,6 @@ footer{ /*pie de pagina*/
 .t3{ /*--modo estandar/cientifica--*/
     font-size: 1.5cm;
     text-align: left;
-    line-height: 2cm;
     color: transparent;
     background-image: url(https://media.giphy.com/media/UR6ZXKs8bKhuU/giphy.gif);
     background-position: center;
@@ -57,9 +52,8 @@ footer{ /*pie de pagina*/
     justify-content: center; /*ubicacion al centro del eje x*/
 }
 
-.menu li>a{
+.menu li a{ /*cuadros verdes*/
     background-color: #00ffa0;
-    color: white;
     padding: 10px; /*borde interno*/
     display: block; /*comportamiento de bloque*/
     text-decoration: none; /*saca subrayado*/
@@ -68,28 +62,26 @@ footer{ /*pie de pagina*/
     text-align:center;
 }
 
-.menu>li>ul{
+.menu li ul{ /*elementos dentro de los cuadros verdes*/
     display: none; /*ocultar y mostrar elementos*/
 }
 
-.menu>li:hover>ul {
+.menu li:hover ul {
     display: block; /*me deja mostrar elementos dentro del menu principal*/
 }
 
-.menu>li:hover>ul>li>ul{
+.menu li:hover ul li ul{
     display: flex; /*flexible, me deja tener la pestaña de email mas grande*/
 }
 
 /*-- submenu para la navegacion entre paginas--*/
 #submenu{
-    margin-bottom: 3cm; /*margen debajo del menu*/
+    margin-bottom: 1.5cm; /*margen debajo del menu*/
 }
 
-#submenu li>a{
+#submenu li a{
     background-color: #00ffa0;
-    color: white;
     padding: 10px;
-    display: block;
     text-decoration: none;
     min-width: 150px;
     border-radius: 32px;
@@ -101,7 +93,7 @@ footer{ /*pie de pagina*/
 .mostrarcalculadora{ /*cuadro negro y organizacion de elementos*/
     grid-area: 1/-1/1/1; /*tamaño y la ubicación de lo negro*/
     padding: 16px;
-    display: flex;
+    display: flex; /*pone el teclado mas abajo*/
     margin: 10px 10px 10px;
     flex-direction: column; /*alineacion de los elementos*/
     background-color: #363636;
@@ -111,13 +103,13 @@ footer{ /*pie de pagina*/
 }
 
 .contenedorcalculadora{ /*borde exterior de la calculadora*/
-    display: flex;
+    display: flex; /*se adapta*/
     justify-content: center;
     align-items: center;
 }
 
 .calculadoraestandar{ /*contenedor multicolor de --estandar--, tamaños de objetos y demas*/
-    display: grid;
+    display: grid; /*grilla*/
     grid-template-columns: repeat(4, 75px); /*define linea y tamaño de columnas*/
     grid-template-rows: 160px repeat(5, 75px);
     background-image: url(https://media.giphy.com/media/H7F0zSaC9ZHZC/giphy.gif);
@@ -237,7 +229,7 @@ form{ /*recuadro verde*/
 }
 
 ul{ /*lista*/
-    list-style: none;
+    list-style: none; /*saca los puntitos*/
     padding: 2px;
     margin: 2px;
 }

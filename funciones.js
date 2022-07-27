@@ -9,6 +9,7 @@ var operacion;
  * Eventos de click
  */
 //Eventos de click
+
 uno.onclick = function(){
     resultado.textContent = resultado.textContent  + "1";
 }
